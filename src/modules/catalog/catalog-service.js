@@ -357,6 +357,7 @@ angular.module('anol.catalog')
                             });
                             var startZIndex = LayersService.zIndex + self.addedLayers.length + anolGroup.layers.length + self.addedGroupsLength;
                             var alternativeZIndex = LayersService.addedLayers.length + anolGroup.layers.length;
+                            var alternativeZIndex = LayersService.flattedLayers().length + anolGroup.layers.length;
                             console.log("startZIndex: " + startZIndex);
                             console.log("alternativeZIndex: " + alternativeZIndex);
                             angular.forEach(anolGroup.layers, function(_layers) {
