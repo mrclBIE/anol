@@ -43,7 +43,9 @@ angular.module('anol.overviewmap')
                     collapseLabel: document.createTextNode(''),
                     collapsed: scope.collapsed,
                     view: new View({
-                        projection: MapService.getMap().getView().getProjection()
+                        maxZoom: 11,
+                        minZoom: 9,
+                        zoom: 10
                     })
                 });
                 var control = new anol.control.Control({
